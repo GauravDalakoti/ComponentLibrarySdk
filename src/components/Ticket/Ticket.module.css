@@ -1,0 +1,146 @@
+.ticket {
+  position: relative;
+  background: url('../../assets/pattern_ticket.svg') no-repeat center/contain;
+  border-radius: 12px;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto 0;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 205px;
+}
+
+/* Header styles */
+.header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Details section (avatar and info) */
+.details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Avatar styles */
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+  object-fit: cover;
+}
+
+/* Info section */
+.info {
+  text-align: left;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.github {
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+/* Footer styles */
+.footer {
+  font-size: 0.65rem;
+  color: #888;
+  margin-left: 19%;
+}
+
+.githubDetails {
+  display: flex;
+  gap: 1px;
+}
+
+/* Ticket number wrapper */
+.ticketNumberWrapper {
+  position: absolute;
+  top: 75px;
+  height: 100%;
+  right: 25px;
+}
+
+/* Ticket number vertical text */
+.ticketNumber {
+  color: #ccc;
+  writing-mode: vertical-rl;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .ticket {
+    max-width: 350px;
+    padding: 1rem 0.75rem;
+  }
+
+  .header {
+    font-size: 1rem;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer {
+    font-size: 0.7rem;
+    margin-left: 15%;
+  }
+
+  .ticketNumber {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .ticket {
+    max-width: 90%;
+    padding: 0.75rem;
+  }
+
+  .header {
+    font-size: 0.9rem;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer {
+    font-size: 0.6rem;
+    margin-left: 10%;
+  }
+
+  .ticketNumber {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,49 @@
+.input {
+  width: 24vw;
+  margin-bottom: 1rem;
+  padding: 0.95rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: transparent;
+  color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.label {
+  float: left;
+  margin-left: 9%;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Input Widths */
+@media (max-width: 1024px) {
+  .input {
+    width: 36vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .input {
+    width: 48vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .input {
+    width: 80vw;
+    font-size: 0.95rem;
+  }
+
+  .label {
+    margin-left: 5%;
+    font-size: 0.85rem;
+  }
+}
